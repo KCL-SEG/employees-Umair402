@@ -50,7 +50,7 @@ class SalaryContractCommission(Employee):
         return self.salary + self.commContracts * self.commRate
 
     def __str__(self):
-        return(f'{self.name} works on a monthly salary of {self.salary} and receives a commission for {self.commContracts} contracts(s) at {self.commRate}/contract. Their total pay is {self.get_pay()}.')
+        return(f'{self.name} works on a monthly salary of {self.salary} and receives a commission for {self.commContracts} contract(s) at {self.commRate}/contract. Their total pay is {self.get_pay()}.')
 
 
 
@@ -66,7 +66,7 @@ class ContractContractCommission(Employee):
         return self.hours * self.rate + self.commContracts * self.commRate
 
     def __str__(self):
-        return(f'{self.name} works on a contract of {self.hours} hours at {self.rate}/hour and receives a commission for {self.commContracts} contracts(s) at {self.commRate}/contract. Their total pay is {self.get_pay()}.')
+        return(f'{self.name} works on a contract of {self.hours} hours at {self.rate}/hour and receives a commission for {self.commContracts} contract(s) at {self.commRate}/contract. Their total pay is {self.get_pay()}.')
 
 class SalaryBonusCommission(Employee):
     def __init__(self, name, salary, commBonus):
